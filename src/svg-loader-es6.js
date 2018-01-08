@@ -5,13 +5,13 @@ const defaultOptions = {
     size: 15,
     radius: 2,
     duration: 1000,
-    maxOpacity: .75,
-    minOpacity: .25,
+    maxOpacity: 0.75,
+    minOpacity: 0.25,
     margin: 2,
     nbRects: 3
 };
 
-export default class Loader {
+export class SVGLoader {
     constructor( options = defaultOptions ) {
 
         // settings
@@ -30,7 +30,7 @@ export default class Loader {
         this.svgEl.appendChild( group );
     }
 
-    createSVG( xmlns ) {
+    createSVG() {
         const el = document.createElementNS( this.xmlns, 'svg' );
         el.setAttributeNS( null, 'id', this.settings.svgId );
         el.setAttributeNS( null, 'viewBox', `0 0 ${ this.settings.width } ${ this.settings.size }` );
@@ -39,12 +39,12 @@ export default class Loader {
         return el;
     }
 
-    createRectangles( xmlns ) {
+    createRectangles() {
         const group = document.createElementNS( this.xmlns, 'g' );
 
         for ( let i = 0; i < this.settings.nbRects; i++ ) {
             const rect = document.createElementNS( this.xmlns, 'rect' );
-            rect.setAttributeNS( null,'id', `rect-${ i }` );
+            rect.setAttributeNS( null, 'id', `rect-${ i }` );
             rect.setAttributeNS( null, 'width', this.settings.size );
             rect.setAttributeNS( null, 'height', this.settings.size );
             rect.setAttributeNS( null, 'x', ( this.settings.size * i ) + ( i * this.settings.margin ) );
@@ -58,8 +58,12 @@ export default class Loader {
             animate.setAttribute( 'attributeName', 'opacity' );
             animate.setAttribute( 'values', `1;'+${ this.settings.minOpacity }+';1` );
 
-            if ( i === 0 ) animate.setAttribute( 'begin', `${ 0 }ms` )
-            else animate.setAttribute( 'begin', `${ this.settings.duration/( ( this.settings.nbRects + 1 ) - i ) }ms` );
+            if ( i === 0 ) {
+                animate.setAttribute( 'begin', `${ 0 }ms` );
+            }
+            else {
+                animate.setAttribute( 'begin', `${ this.settings.duration/( ( this.settings.nbRects + 1 ) - i ) }ms` );
+            }
 
             animate.setAttribute( 'dur', `${ this.settings.duration }ms` );
             animate.setAttribute( 'repeatCount', 'indefinite' );
