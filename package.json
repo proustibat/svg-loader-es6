@@ -1,0 +1,31 @@
+{
+  "name": "svg-loader-es6",
+  "version": "0.0.1",
+  "description": "SVG Loader Vanilla ES6",
+  "keywords": [
+    "svg",
+    "loader",
+    "es6",
+    "vanilla",
+    "js",
+    "vanilla js",
+    "vanilla es6",
+    "svg animation"
+  ],
+  "main": "src/svg-loader.js",
+  "repository": "git@github.com:proustibat/svg-loader-es6.git",
+  "author": "Proustibat <proustibat@gmail.com>",
+  "license": "GPL-3.0",
+  "scripts": {
+    "postversion": "git push origin master --tags"
+  },
+  "devDependencies": {
+    "commitizen": "2.9.6",
+    "cz-conventional-changelog": "2.1.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+.idea
+dist
+node_modules
+.scannerwork
+coverage
+sonar-project.properties
+.travis.yml
+test
