@@ -11,7 +11,7 @@ const defaultOptions = {
     nbRects: 3
 };
 
-export class SVGLoader {
+class SVGLoader {
     constructor( options = defaultOptions ) {
 
         // settings
@@ -56,7 +56,7 @@ export class SVGLoader {
 
             const animate = document.createElementNS( this.xmlns, 'animate' );
             animate.setAttribute( 'attributeName', 'opacity' );
-            animate.setAttribute( 'values', `1;'+${ this.settings.minOpacity }+';1` );
+            animate.setAttribute( 'values', `${ this.settings.maxOpacity };${ this.settings.minOpacity };${ this.settings.maxOpacity }` );
 
             if ( i === 0 ) {
                 animate.setAttribute( 'begin', `${ 0 }ms` );
@@ -94,5 +94,13 @@ export class SVGLoader {
     destroy() {
         const svgContainer = document.getElementById( this.settings.containerId );
         svgContainer.querySelector( 'svg' ).remove();
+        delete this.xmlns;
+        delete this.settings;
+        delete this.svgEl;
     }
+}
+
+export {
+    defaultOptions,
+    SVGLoader
 }
