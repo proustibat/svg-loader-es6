@@ -1,7 +1,7 @@
 const defaultOptions = {
     containerId: 'loader-container',
     svgId: 'loader',
-    fill: '#1f1f1f',
+    fill: '#000000',
     size: 15,
     radius: 2,
     duration: 1000,
