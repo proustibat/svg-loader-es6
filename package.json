@@ -17,11 +17,20 @@
   "author": "Proustibat <proustibat@gmail.com>",
   "license": "GPL-3.0",
   "scripts": {
+    "lint:js": "eslint . --ext .js -c .eslintrc.js --fix",
     "postversion": "git push origin master --tags"
   },
   "devDependencies": {
+    "babel-eslint": "8.2.1",
     "commitizen": "2.9.6",
-    "cz-conventional-changelog": "2.1.0"
+    "cz-conventional-changelog": "2.1.0",
+    "eslint": "4.15.0",
+    "eslint-config-eslint": "4.0.0",
+    "eslint-config-standard": "11.0.0-beta.0",
+    "eslint-plugin-import": "2.8.0",
+    "eslint-plugin-node": "5.2.1",
+    "eslint-plugin-promise": "3.6.0",
+    "eslint-plugin-standard": "3.0.1"
   },
   "config": {
     "commitizen": {

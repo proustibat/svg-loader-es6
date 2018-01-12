@@ -6,3 +6,5 @@ coverage
 sonar-project.properties
 .travis.yml
 test
+.eslintignore
+.eslintrc.js

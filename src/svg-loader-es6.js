@@ -1,6 +1,6 @@
-/**====================================================
+/** ====================================================
  *  Private properties
- =====================================================*/
+ ===================================================== */
 
 // XML namespace for SVG
 const xmlns = 'http://www.w3.org/2000/svg';
@@ -16,34 +16,33 @@ const defaultOptions = {
     margin: 2,
     nbRects: 3
 };
-let svgEl = Symbol();
-let settings = Symbol();
+let svgEl = Symbol( 'svgEl' );
+let settings = Symbol( 'settings' );
 
-/**====================================================
+/** ====================================================
  *  Private methods
- =====================================================*/
-const say = Symbol();
-const createSVG = Symbol();
-const createRectangles = Symbol();
+ ===================================================== */
+const createSVG = Symbol( 'createSVG' );
+const createRectangles = Symbol( 'createRectangles' );
 
-/**====================================================
+/** ====================================================
  *  Main Class
- =====================================================*/
+ ===================================================== */
 export class SVGLoader {
     /**
      * Constructor
      * @param options
      * @returns {boolean}
      */
-    constructor( options = defaultOptions ) {
+    constructor ( options = defaultOptions ) {
         // Settings
         this[ settings ] = Object.assign( {}, defaultOptions, options );
         this[ settings ].width = ( this[ settings ].size * this[ settings ].nbRects ) + ( ( this[ settings ].nbRects - 1 ) * this[ settings ].margin );
 
         // Container for the svg depending on given id
         const svgContainer = document.getElementById( this[ settings ].containerId );
-        if( !svgContainer ) {
-            console.warn( `Oops, there's no dom element with "${ this[ settings ].containerId }" id` )
+        if ( !svgContainer ) {
+            console.warn( `Oops, there's no dom element with "${ this[ settings ].containerId }" id` );
             return false;
         }
 
@@ -96,7 +95,7 @@ export class SVGLoader {
                 animate.setAttribute( 'begin', `${ 0 }ms` );
             }
             else {
-                animate.setAttribute( 'begin', `${ this[ settings ].duration/( ( this[ settings ].nbRects + 1 ) - i ) }ms` );
+                animate.setAttribute( 'begin', `${ this[ settings ].duration / ( ( this[ settings ].nbRects + 1 ) - i ) }ms` );
             }
 
             animate.setAttribute( 'dur', `${ this[ settings ].duration }ms` );
@@ -109,46 +108,45 @@ export class SVGLoader {
         return group;
     }
 
-
     /**
      * Hide or show the SVG Element
      */
-    toggle() {
+    toggle () {
         window.getComputedStyle( this[ svgEl ] ).display === 'none' ? this.show() : this.hide();
     }
 
     /**
      * Show the SVG Element
      */
-    show() {
+    show () {
         this[ svgEl ].style.display = 'block';
     }
 
     /**
      * Hide the SVG Element
      */
-    hide() {
+    hide () {
         this[ svgEl ].style.display = 'none';
     }
 
     /**
      * Remove the SVG element from DOM and delete all properties or listeners
      */
-    destroy() {
+    destroy () {
         const svgContainer = document.getElementById( this[ settings ].containerId );
         svgContainer.querySelector( 'svg' ).remove();
         delete this[ settings ];
         delete this[ svgEl ];
     }
 
-    /**====================================================
+    /** ====================================================
      *  getters
-     =====================================================*/
+     ===================================================== */
     /**
      * The current settings of the instance
      * @returns {*}
      */
-    get settings() {
+    get settings () {
         return this[ settings ];
     }
 
@@ -156,7 +154,7 @@ export class SVGLoader {
      * The default options for settings if there's no settings given to the constructor
      * @returns {{containerId: string, svgId: string, fill: string, size: number, radius: number, duration: number, maxOpacity: number, minOpacity: number, margin: number, nbRects: number}}
      */
-    static get defaultOptions() {
+    static get defaultOptions () {
         return defaultOptions;
     }
 }
