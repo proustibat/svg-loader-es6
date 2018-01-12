@@ -85,7 +85,7 @@ destroy | - | - | Remove the SVG element from DOM and delete all properties or l
 
 
 ## Demo
-### [A complete demo is available here](https://github.com/proustibat/svg-loader-es6-example)
+### [A complete demo is available here](https://proustibat.github.io/svg-loader-es6-example/)
 <img src="https://j.gifs.com/zK9948.gif" alt="Live Demo Examples" width="500" />
 
 #### [The source code of the demo is here](https://github.com/proustibat/svg-loader-es6-example)
