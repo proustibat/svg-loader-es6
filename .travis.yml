@@ -1,0 +1,19 @@
+env:
+  global:
+  - CC_TEST_REPORTER_ID=2c0263d0730edc77654195955e1221cbfad01a4f3010dab476c3917769236fe2
+  - GITHUB_REPO: proustibat/svg-loader-es6
+language: node_js
+node_js: '8'
+cache: yarn
+addons:
+  sonarcloud:
+    organization: proustibat-github
+    token:
+      secure: p/VOlDxe2hvJFgcqbtC0s3LpyDBz2a9d8P4XEUr+4n2V1DczW5z7zide/2eM8eQWsmKPVt/7YB8vTqgid2zpoz0F4JM+Xi9igpkzWMkTwdCvYkIhA6Qmg74rWvhS6BY8idlEzA+t0y75N8Lt9EIr720an3afWJEsmE8XJ5pPWfDsAS0sK1bE4ZYIXcQg2JiPDJJ0nkCbizB8CfomvomAwwBLXyclrEUIqX4d2y7lHJI1Ab//LQVxVSq+235JmXUjjxW7m7FDLJ4FoSXoeaKQEO+S9QPXvC7snWETzSAty9MdJ+Ox0/mIoK/9h6j2gRHdpNVsthUsUUVSevIQPMl4zTUingB4rsY2vyWnSeiKNgCj4NBAvprV+vxCKB2QmDsx+34jW5CEWWTzmWvEcfJywAj/IhlcbURMkud4ViuZqRVQ/eHchWgHbQJIwPiesTkLi//O7PaS+XEmbzZTVH71XWVkH2fMgyV+pgwVzetKuYBn20gfvUxCLcvKi/OpHOJHL8aX8UZZR8g3E5aNsr8axt+Ef5xxMM7nOTfJjkRhHCCP9Z1VcIyZ3q06SC5yHBZqmu2GGIIUNJpwMRMKHMrDHVzr5NvHyqg3ivmE96LJOIEFY4nzzi+vIsuoCLPAxGMONajzVK/0s3/z6N7ryUTujLPQu4s+sgnNCDMldnjeP6M=
+install:
+- yarn install
+before_script:
+- export DISPLAY=:99.0
+- sh -e /etc/init.d/xvfb start
+script:
+- yarn lint:js && bash sonar.sh
