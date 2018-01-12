@@ -24,6 +24,7 @@ let settings = Symbol( 'settings' );
  ===================================================== */
 const createSVG = Symbol( 'createSVG' );
 const createRectangles = Symbol( 'createRectangles' );
+const createAnimateElement = Symbol( 'createAnimateElement' );
 
 /** ====================================================
  *  Main Class
@@ -87,25 +88,35 @@ export class SVGLoader {
             rect.setAttributeNS( null, 'fill', this[ settings ].fill );
             rect.setAttributeNS( null, 'fill-opacity', this[ settings ].maxOpacity );
 
-            const animate = document.createElementNS( xmlns, 'animate' );
-            animate.setAttribute( 'attributeName', 'opacity' );
-            animate.setAttribute( 'values', `${ this[ settings ].maxOpacity };${ this[ settings ].minOpacity };${ this[ settings ].maxOpacity }` );
-
-            if ( i === 0 ) {
-                animate.setAttribute( 'begin', `${ 0 }ms` );
-            }
-            else {
-                animate.setAttribute( 'begin', `${ this[ settings ].duration / ( ( this[ settings ].nbRects + 1 ) - i ) }ms` );
-            }
-
-            animate.setAttribute( 'dur', `${ this[ settings ].duration }ms` );
-            animate.setAttribute( 'repeatCount', 'indefinite' );
+            const animate = this[ createAnimateElement ]( i );
 
             rect.appendChild( animate );
             group.appendChild( rect );
         }
 
         return group;
+    }
+
+    /**
+     * Create Animate element for a rectangle shape of the svg
+     * @param index
+     * @returns {HTMLElement | SVGAElement | SVGCircleElement | SVGClipPathElement | SVGComponentTransferFunctionElement | SVGDefsElement | *}
+     */
+    [ createAnimateElement ] ( index ) {
+        const animate = document.createElementNS( xmlns, 'animate' );
+        animate.setAttribute( 'attributeName', 'opacity' );
+        animate.setAttribute( 'values', `${ this[ settings ].maxOpacity };${ this[ settings ].minOpacity };${ this[ settings ].maxOpacity }` );
+
+        if ( index === 0 ) {
+            animate.setAttribute( 'begin', `${ 0 }ms` );
+        }
+        else {
+            animate.setAttribute( 'begin', `${ this[ settings ].duration / ( ( this[ settings ].nbRects + 1 ) - index ) }ms` );
+        }
+        animate.setAttribute( 'dur', `${ this[ settings ].duration }ms` );
+        animate.setAttribute( 'repeatCount', 'indefinite' );
+
+        return animate;
     }
 
     /**
