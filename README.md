@@ -46,7 +46,6 @@ import { SVGLoader } from 'svg-loader-es6';
 new SVGLoader( {
   containerId: 'your-container-id'
 } )
-}
 ```
 
 ## Settings
