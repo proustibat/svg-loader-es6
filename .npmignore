@@ -8,3 +8,5 @@ sonar-project.properties
 test
 .eslintignore
 .eslintrc.js
+jsdoc
+esdoc

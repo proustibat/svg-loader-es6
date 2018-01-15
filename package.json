@@ -17,6 +17,8 @@
   "author": "Proustibat <proustibat@gmail.com>",
   "license": "GPL-3.0",
   "scripts": {
+    "jsdoc": "./node_modules/.bin/documentation build src/svg-loader-es6.js -f html -o jsdoc -g && open ./jsdoc/index.html",
+    "esdoc": "./node_modules/.bin/esdoc -c ./.esdoc.json && open ./esdoc/index.html",
     "lint:js": "eslint . --ext .js -c .eslintrc.js --fix",
     "postversion": "git push origin master --tags"
   },
@@ -24,6 +26,9 @@
     "babel-eslint": "8.2.1",
     "commitizen": "2.9.6",
     "cz-conventional-changelog": "2.1.0",
+    "documentation": "5.3.5",
+    "esdoc": "1.0.4",
+    "esdoc-standard-plugin": "1.0.0",
     "eslint": "4.15.0",
     "eslint-config-eslint": "4.0.0",
     "eslint-config-standard": "11.0.0-beta.0",

@@ -1,0 +1,24 @@
+{
+  "source": "./src",
+  "destination": "./esdoc",
+  "plugins": [
+    {
+      "name": "esdoc-standard-plugin",
+      "option": {
+        "lint": {"enable": true},
+        "coverage": {"enable": false},
+        "accessor": {"access": ["public", "protected", "private"], "autoPrivate": true},
+        "undocumentIdentifier": {"enable": true},
+        "unexportedIdentifier": {"enable": false},
+        "typeInference": {"enable": true},
+        "brand": {
+          "title": "SVG Loader ES6",
+          "description": "SVG Loader Vanilla ES6",
+          "repository": "https://github.com/proustibat/svg-loader-es6",
+          "site": "https://proustibat.github.io/svg-loader-es6-example/",
+          "author": "https://twitter.com/proustibat"
+        }
+      }
+    }
+  ]
+}
