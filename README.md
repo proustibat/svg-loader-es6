@@ -90,7 +90,7 @@ destroy | - | - | Remove the SVG element from DOM and delete all properties or l
 
 #### [The source code of the demo is here](https://github.com/proustibat/svg-loader-es6-example)
 
-### [Use the settings generator here](https://github.com/proustibat/svg-loader-es6-example/generator.html)
+### [Use the settings generator here](https://proustibat.github.io/svg-loader-es6-example/generator.html)
 <img src="https://j.gifs.com/qYDD8r.gif" alt="Settings generator gif" width="500" />
 
 ## Contributing
@@ -109,4 +109,4 @@ destroy | - | - | Remove the SVG element from DOM and delete all properties or l
 </table>
 
 
-[The dashboard with CI and code quality indicators](https://github.com/proustibat/svg-loader-es6-example/dashboard.html)
+[The dashboard with CI and code quality indicators](https://proustibat.github.io/svg-loader-es6-example/dashboard.html)
