@@ -124,6 +124,7 @@ export class SVGLoader {
      */
     toggle () {
         window.getComputedStyle( this[ svgEl ] ).display === 'none' ? this.show() : this.hide();
+        return this;
     }
 
     /**
@@ -131,6 +132,7 @@ export class SVGLoader {
      */
     show () {
         this[ svgEl ].style.display = 'block';
+        return this;
     }
 
     /**
@@ -138,6 +140,7 @@ export class SVGLoader {
      */
     hide () {
         this[ svgEl ].style.display = 'none';
+        return this;
     }
 
     /**
