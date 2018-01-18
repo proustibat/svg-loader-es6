@@ -1,5 +1,7 @@
 # SVG Loader ES6 
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/proustibat/svg-loader-es6.svg)](https://greenkeeper.io/)
+
 ## A class to create customizable SVG loader with Vanilla ES6.
 
 [![Build Status](https://travis-ci.org/proustibat/svg-loader-es6.svg?branch=master)](https://travis-ci.org/proustibat/svg-loader-es6) 
