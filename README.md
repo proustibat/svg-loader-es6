@@ -1,16 +1,15 @@
 # SVG Loader ES6 
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/proustibat/svg-loader-es6.svg)](https://greenkeeper.io/)
-
 ## A class to create customizable SVG loader with Vanilla ES6.
 
-[![Build Status](https://travis-ci.org/proustibat/svg-loader-es6.svg?branch=master)](https://travis-ci.org/proustibat/svg-loader-es6) 
+[![Greenkeeper badge](https://badges.greenkeeper.io/proustibat/svg-loader-es6.svg)](https://greenkeeper.io/)
 [![Maintenance](https://img.shields.io/maintenance/yes/2018.svg)](https://github.com/proustibat/svg-loader-es6/commits/master) 
 [![GitHub last commit](https://img.shields.io/github/last-commit/proustibat/svg-loader-es6.svg)](https://github.com/proustibat/svg-loader-es6/commits/master) 
 <a href='https://david-dm.org/proustibat/svg-loader-es6'><img src='https://david-dm.org/proustibat/svg-loader-es6/status.svg' alt='dependencies Status'/></a>
 <a href='https://david-dm.org/proustibat/svg-loader-es6?type=dev'><img src='https://david-dm.org/proustibat/svg-loader-es6/dev-status.svg' alt='devDependencies Status'/></a>
 <a href='https://github.com/proustibat/svg-loader-es6/blob/master/LICENSE.md'><img src='https://img.shields.io/github/license/proustibat/svg-loader-es6.svg' alt='GitHub license'/></a>
 
+[![Build Status](https://travis-ci.org/proustibat/svg-loader-es6.svg?branch=master)](https://travis-ci.org/proustibat/svg-loader-es6) 
 [![Maintainability](https://api.codeclimate.com/v1/badges/44d6de4af0a54555f1ef/maintainability)](https://codeclimate.com/github/proustibat/svg-loader-es6/maintainability)
 [![Code Climate Issues](https://img.shields.io/codeclimate/issues/github/proustibat/svg-loader-es6.svg)](https://codeclimate.com/github/proustibat/svg-loader-es6/issues) 
 
