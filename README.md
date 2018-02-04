@@ -93,9 +93,9 @@ destroy | - | - | Remove the SVG element from DOM and delete all properties or l
   <tr>
     <td>
       <ul>
-        <li>Issue Tracker:<a href="https://github.com/proustibat/svg-loader-es6/issues" alt="">https://github.com/proustibat/svg-loader-es6/issues</a></li>
-        <li>Source Code<a href="https://github.com/proustibat/svg-loader-es6">https://github.com/proustibat/svg-loader-es6</a></li>
-        <li>Pull Requests<a href="https://github.com/proustibat/svg-loader-es6/pulls" alt="">https://github.com/proustibat/svg-loader-es6/pulls</a></li>
+        <li>Issue Tracker: <a href="https://github.com/proustibat/svg-loader-es6/issues" alt="">https://github.com/proustibat/svg-loader-es6/issues</a></li>
+        <li>Source Code: <a href="https://github.com/proustibat/svg-loader-es6">https://github.com/proustibat/svg-loader-es6</a></li>
+        <li>Pull Requests: <a href="https://github.com/proustibat/svg-loader-es6/pulls" alt="">https://github.com/proustibat/svg-loader-es6/pulls</a></li>
       </ul>
     </td>
     <td><a href="https://github.com/standard/standard"><img src="https://cdn.rawgit.com/standard/standard/master/badge.svg" alt="JavaScript Style Guide" /></a></td>
