@@ -23,16 +23,16 @@
     "postversion": "git push origin master --tags"
   },
   "devDependencies": {
-    "babel-eslint": "8.2.1",
+    "babel-eslint": "8.2.2",
     "commitizen": "2.9.6",
     "cz-conventional-changelog": "2.1.0",
-    "documentation": "5.3.5",
+    "documentation": "5.4.0",
     "esdoc": "1.0.4",
     "esdoc-standard-plugin": "1.0.0",
-    "eslint": "4.17.0",
+    "eslint": "4.18.0",
     "eslint-config-eslint": "4.0.0",
-    "eslint-config-standard": "11.0.0-beta.0",
     "eslint-plugin-import": "2.9.0",
+    "eslint-config-standard": "11.0.0",
     "eslint-plugin-node": "6.0.0",
     "eslint-plugin-promise": "3.6.0",
     "eslint-plugin-standard": "3.0.1"
