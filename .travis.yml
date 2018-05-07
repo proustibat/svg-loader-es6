@@ -3,7 +3,9 @@ env:
   - CC_TEST_REPORTER_ID=2c0263d0730edc77654195955e1221cbfad01a4f3010dab476c3917769236fe2
   - GITHUB_REPO: proustibat/svg-loader-es6
 language: node_js
-node_js: '8'
+node_js:
+- '8'
+- '10'
 cache: yarn
 addons:
   sonarcloud:
