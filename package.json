@@ -29,7 +29,7 @@
     "documentation": "5.4.0",
     "esdoc": "1.0.4",
     "esdoc-standard-plugin": "1.0.0",
-    "eslint": "4.18.0",
+    "eslint": "6.5.0",
     "eslint-config-eslint": "4.0.0",
     "eslint-plugin-import": "2.9.0",
     "eslint-config-standard": "11.0.0",
