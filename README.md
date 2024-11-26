@@ -2,14 +2,10 @@
 
 ## A class to create customizable SVG loader with Vanilla ES6.
 
+| [![GitHub package version](https://img.shields.io/github/package-json/v/proustibat/svg-loader-es6.svg)]() <br/> [![npm](https://img.shields.io/npm/v/svg-loader-es6.svg)](https://www.npmjs.com/package/svg-loader-es6) <br/>  [![Npm downloads](https://img.shields.io/npm/dt/svg-loader-es6.svg)](https://www.npmjs.com/package/svg-loader-es6) | [![Maintenance](https://img.shields.io/maintenance/yes/2018.svg)](https://github.com/proustibat/svg-loader-es6/commits/master) </br> [![GitHub last commit](https://img.shields.io/github/last-commit/proustibat/svg-loader-es6.svg)](https://github.com/proustibat/svg-loader-es6/commits/master) |
+|-|-|
 
 
-
-| [![NPM](https://nodei.co/npm/svg-loader-es6.png?compact=true)](https://www.npmjs.com/package/svg-loader-es6) </br> [![GitHub package version](https://img.shields.io/github/package-json/v/proustibat/svg-loader-es6.svg)]() [![npm](https://img.shields.io/npm/v/svg-loader-es6.svg)](https://www.npmjs.com/package/svg-loader-es6) [![Npm downloads](https://img.shields.io/npm/dt/svg-loader-es6.svg)](https://www.npmjs.com/package/svg-loader-es6) | [![Build Status](https://travis-ci.org/proustibat/svg-loader-es6.svg?branch=master)](https://travis-ci.org/proustibat/svg-loader-es6) </br> [![Sonar quality gate](https://sonarcloud.io/api/badges/gate?key=prstbt.svg-loader-es6)](https://sonarcloud.io/dashboard?id=.svg-loader-es6) </br> [![Code Climate](https://codeclimate.com/github/proustibat/svg-loader-es6/badges/gpa.svg)](https://codeclimate.com/github/proustibat/svg-loader-es6) | [![Greenkeeper badge](https://badges.greenkeeper.io/proustibat/svg-loader-es6.svg)](https://greenkeeper.io/) </br>[![Dependencies Status](https://david-dm.org/proustibat/stats-text/status.svg)](https://david-dm.org/proustibat/stats-text) </br>[![DevDependencies Status](https://david-dm.org/proustibat/stats-text/dev-status.svg)](https://david-dm.org/proustibat/stats-text?type=dev) |
-| --- | :--- | :---- |
-
-[![Maintenance](https://img.shields.io/maintenance/yes/2018.svg)](https://github.com/proustibat/svg-loader-es6/commits/master) </br> [![GitHub last commit](https://img.shields.io/github/last-commit/proustibat/svg-loader-es6.svg)](https://github.com/proustibat/svg-loader-es6/commits/master) | [![CodeClimate issues](https://img.shields.io/codeclimate/issues/github/proustibat/svg-loader-es6.svg)](https://codeclimate.com/github/proustibat/svg-loader-es6/issues) <br/> [![Open issues](https://sonarcloud.io/api/badges/measure?key=prstbt.svg-loader-es6&metric=open_issues)](https://sonarcloud.io/component_measures?id=prstbt.svg-loader-es6&metric=open_issues) | [![Complexity](https://sonarcloud.io/api/badges/measure?key=prstbt.svg-loader-es6&metric=complexity)](https://sonarcloud.io/component_measures?id=prstbt.svg-loader-es6&metric=complexity) <br/> [![Cognitive Complexity](https://sonarcloud.io/api/badges/measure?key=prstbt.svg-loader-es6&metric=cognitive_complexity)](https://sonarcloud.io/component_measures?id=prstbt.svg-loader-es6&metric=cognitive_complexity) | [![Bugs](https://sonarcloud.io/api/badges/measure?key=prstbt.svg-loader-es6&metric=bugs)](https://sonarcloud.io/component_measures?id=prstbt.svg-loader-es6&metric=bugs) <br/> [![Code smells](https://sonarcloud.io/api/badges/measure?key=prstbt.svg-loader-es6&metric=code_smells)](https://sonarcloud.io/component_measures?id=prstbt.svg-loader-es6&metric=code_smells) |
-| :--- | :--- | :--- | :---- |
 
 ---------------------
 
@@ -100,6 +96,3 @@ destroy | - | - | Remove the SVG element from DOM and delete all properties or l
     <td><a href="https://github.com/standard/standard"><img src="https://cdn.rawgit.com/standard/standard/master/badge.svg" alt="JavaScript Style Guide" /></a></td>
   </tr>  
 </table>
-
-
-[The dashboard with CI and code quality indicators](https://proustibat.github.io/svg-loader-es6-example/dashboard.html)
