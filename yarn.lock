@@ -967,9 +967,9 @@ babel-generator@6.11.4:
     lodash "^4.2.0"
     source-map "^0.5.0"
 
-babel-generator@6.26.0, babel-generator@^6.26.0:
-  version "6.26.0"
-  resolved "https://registry.yarnpkg.com/babel-generator/-/babel-generator-6.26.0.tgz#ac1ae20070b79f6e3ca1d3269613053774f20dc5"
+babel-generator@6.26.1, babel-generator@^6.26.0:
+  version "6.26.1"
+  resolved "https://registry.yarnpkg.com/babel-generator/-/babel-generator-6.26.1.tgz#1844408d3b8f0d35a404ea7ac180f087a601bd90"
   dependencies:
     babel-messages "^6.23.0"
     babel-runtime "^6.26.0"
@@ -977,7 +977,7 @@ babel-generator@6.26.0, babel-generator@^6.26.0:
     detect-indent "^4.0.0"
     jsesc "^1.3.0"
     lodash "^4.17.4"
-    source-map "^0.5.6"
+    source-map "^0.5.7"
     trim-right "^1.0.1"
 
 babel-helper-bindify-decorators@^6.24.1:
@@ -1990,6 +1990,17 @@ cheerio@0.22.0:
     lodash.reject "^4.4.0"
     lodash.some "^4.4.0"
 
+cheerio@1.0.0-rc.2:
+  version "1.0.0-rc.2"
+  resolved "https://registry.yarnpkg.com/cheerio/-/cheerio-1.0.0-rc.2.tgz#4b9f53a81b27e4d5dac31c0ffd0cfa03cc6830db"
+  dependencies:
+    css-select "~1.2.0"
+    dom-serializer "~0.1.0"
+    entities "~1.1.1"
+    htmlparser2 "^3.9.1"
+    lodash "^4.15.0"
+    parse5 "^3.0.1"
+
 chokidar@^2.0.0:
   version "2.1.8"
   resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-2.1.8.tgz#804b3a7b6a99358c3c5c61e71d8728f041cff917"
@@ -2129,6 +2140,10 @@ color-convert@^2.0.1:
 color-logger@0.0.3:
   version "0.0.3"
   resolved "https://registry.yarnpkg.com/color-logger/-/color-logger-0.0.3.tgz#d9b22dd1d973e166b18bf313f9f481bba4df2018"
+
+color-logger@0.0.6:
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/color-logger/-/color-logger-0.0.6.tgz#e56245ef29822657110c7cb75a9cd786cb69ed1b"
 
 color-name@^1.1.1:
   version "1.1.3"
@@ -2936,21 +2951,21 @@ esdoc-unexported-identifier-plugin@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/esdoc-unexported-identifier-plugin/-/esdoc-unexported-identifier-plugin-1.0.0.tgz#1f9874c6a7c2bebf9ad397c3ceb75c9c69dabab1"
 
-esdoc@1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/esdoc/-/esdoc-1.0.4.tgz#e2534a228aa1f185e9746e8e418ae0330b967010"
+esdoc@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/esdoc/-/esdoc-1.1.0.tgz#07d40ebf791764cd537929c29111e20a857624f3"
   dependencies:
-    babel-generator "6.26.0"
+    babel-generator "6.26.1"
     babel-traverse "6.26.0"
     babylon "6.18.0"
-    cheerio "0.22.0"
-    color-logger "0.0.3"
+    cheerio "1.0.0-rc.2"
+    color-logger "0.0.6"
     escape-html "1.0.3"
-    fs-extra "1.0.0"
+    fs-extra "5.0.0"
     ice-cap "0.0.4"
-    marked "0.3.6"
+    marked "0.3.19"
     minimist "1.2.0"
-    taffydb "2.7.2"
+    taffydb "2.7.3"
 
 eslint-compat-utils@^0.5.1:
   version "0.5.1"
@@ -3492,6 +3507,14 @@ fs-extra@1.0.0:
     graceful-fs "^4.1.2"
     jsonfile "^2.1.0"
     klaw "^1.0.0"
+
+fs-extra@5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-5.0.0.tgz#414d0110cdd06705734d055652c5411260c31abd"
+  dependencies:
+    graceful-fs "^4.1.2"
+    jsonfile "^4.0.0"
+    universalify "^0.1.0"
 
 fs-extra@9.1.0:
   version "9.1.0"
@@ -5355,7 +5378,7 @@ lodash.uniq@^4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
 
-lodash@4.17.21, lodash@^4.1.0, lodash@^4.17.19, lodash@^4.17.21, lodash@^4.17.4, lodash@^4.2.0:
+lodash@4.17.21, lodash@^4.1.0, lodash@^4.15.0, lodash@^4.17.19, lodash@^4.17.21, lodash@^4.17.4, lodash@^4.2.0:
   version "4.17.21"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
 
@@ -5437,6 +5460,10 @@ markdown-escapes@^1.0.0:
 markdown-table@^1.1.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/markdown-table/-/markdown-table-1.1.1.tgz#4b3dd3a133d1518b8ef0dbc709bf2a1b4824bc8c"
+
+marked@0.3.19:
+  version "0.3.19"
+  resolved "https://registry.yarnpkg.com/marked/-/marked-0.3.19.tgz#5d47f709c4c9fc3c216b6d46127280f40b39d790"
 
 marked@0.3.6:
   version "0.3.6"
@@ -6140,6 +6167,12 @@ parse5@4.0.0:
 parse5@^1.5.1:
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/parse5/-/parse5-1.5.1.tgz#9b7f3b0de32be78dc2401b17573ccaf0f6f59d94"
+
+parse5@^3.0.1:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/parse5/-/parse5-3.0.3.tgz#042f792ffdd36851551cf4e9e066b3874ab45b5c"
+  dependencies:
+    "@types/node" "*"
 
 pascalcase@^0.1.1:
   version "0.1.1"
@@ -7171,7 +7204,7 @@ source-map-url@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/source-map-url/-/source-map-url-0.4.0.tgz#3e935d7ddd73631b97659956d55128e87b5084a3"
 
-source-map@^0.5.0, source-map@^0.5.6, source-map@~0.5.6:
+source-map@^0.5.0, source-map@^0.5.6, source-map@^0.5.7, source-map@~0.5.6:
   version "0.5.7"
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.5.7.tgz#8a039d2d1021d22d1ea14c80d8ea468ba2ef3fcc"
 
@@ -7503,6 +7536,10 @@ synckit@^0.9.1:
 taffydb@2.7.2:
   version "2.7.2"
   resolved "https://registry.yarnpkg.com/taffydb/-/taffydb-2.7.2.tgz#7bf8106a5c1a48251b3e3bc0a0e1732489fd0dc8"
+
+taffydb@2.7.3:
+  version "2.7.3"
+  resolved "https://registry.yarnpkg.com/taffydb/-/taffydb-2.7.3.tgz#2ad37169629498fca5bc84243096d3cde0ec3a34"
 
 tapable@^2.2.0:
   version "2.2.1"
