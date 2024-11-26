@@ -2,8 +2,8 @@
 
 ## A class to create customizable SVG loader with Vanilla ES6.
 
-| [![GitHub package version](https://img.shields.io/github/package-json/v/proustibat/svg-loader-es6.svg)]() <br/> [![npm](https://img.shields.io/npm/v/svg-loader-es6.svg)](https://www.npmjs.com/package/svg-loader-es6) <br/>  [![Npm downloads](https://img.shields.io/npm/dt/svg-loader-es6.svg)](https://www.npmjs.com/package/svg-loader-es6) | [![Maintenance](https://img.shields.io/maintenance/yes/2018.svg)](https://github.com/proustibat/svg-loader-es6/commits/master) </br> [![GitHub last commit](https://img.shields.io/github/last-commit/proustibat/svg-loader-es6.svg)](https://github.com/proustibat/svg-loader-es6/commits/master) |
-|-|-|
+| [![GitHub package version](https://img.shields.io/github/package-json/v/proustibat/svg-loader-es6.svg)]() <br/> [![npm](https://img.shields.io/npm/v/svg-loader-es6.svg)](https://www.npmjs.com/package/svg-loader-es6) <br/>  [![Npm downloads](https://img.shields.io/npm/dt/svg-loader-es6.svg)](https://www.npmjs.com/package/svg-loader-es6) | [![Maintenance](https://img.shields.io/maintenance/yes/2024.svg)](https://github.com/proustibat/svg-loader-es6/commits/main) </br> [![GitHub last commit](https://img.shields.io/github/last-commit/proustibat/svg-loader-es6.svg)](https://github.com/proustibat/svg-loader-es6/commits/main) |
+|-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
 
 
