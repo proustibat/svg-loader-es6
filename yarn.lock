@@ -1748,9 +1748,9 @@ eslint-plugin-n@17.14.0, eslint-plugin-n@^17.2.0:
     minimatch "^9.0.5"
     semver "^7.6.3"
 
-eslint-plugin-promise@7.2.0:
-  version "7.2.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-promise/-/eslint-plugin-promise-7.2.0.tgz#ef4194982c3a00867a4def866e0b5abf0caf6a87"
+eslint-plugin-promise@7.2.1:
+  version "7.2.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-promise/-/eslint-plugin-promise-7.2.1.tgz#a0652195700aea40b926dc3c74b38e373377bfb0"
   dependencies:
     "@eslint-community/eslint-utils" "^4.4.0"
 
